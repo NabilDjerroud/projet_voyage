@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu&display=swap");
+
+body {
+  /* Fond de page dégradé radial */
+  background: radial-gradient(rgb(5, 164, 222), rgb(31, 70, 127));
+  /* Pour que le dégradé remplisse toute la page */
+  height: 100vh;
+  margin: 0;
+  font-family: "Alata", sans-serif; /* Police de caractère Alata pour le texte */
+}
+
+.container {
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: space-between; /* Pour mettre le logo à gauche et la nav à droite */
+  align-items: center; /* Pour aligner verticalement le contenu */
+  padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
+nav ul {
+  list-style: none; /* Supprime les puces des listes */
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments de la liste horizontalement */
+}
+
+nav ul li {
+  margin-right: 20px; /* Ajoute un peu d'espace entre chaque élément de la liste */
+}
+
+.hero-section {
+  position: relative;
+  height: 400px;
+  background-image: url("/assets/img/pexels-andrea-piacquadio-3769138.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    #ef943d,
+    #fac835
+  ); /* Dégradé de couleur pour le titre h1 */
+  /* -webkit-background-clip: text; Permet de clipper le dégradé dans le texte */
+  -webkit-text-fill-color: transparent; /* Rend le texte transparent pour afficher le dégradé */
+}
+
+.hero-content p {
+  font-family: "Alata", sans-serif;
+  font-size: 2em;
+  line-height: 1.5;
+  text-shadow: 1px 2px #003366;
+  /* border: 1px solid black; Ajoute un contour noir au paragraphe */
+  padding: 10px; /* Ajoute un peu d'espacement interne */
+  text-decoration-line: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif; /* Police de caractère Ubuntu pour les titres */
+}
+
+.offers-section {
+  display: flex; /* Utilisation de Flexbox pour aligner les div.offre sur une ligne */
+  justify-content: space-between; /* Pour espacer équitablement les offres sur la ligne */
+  flex-wrap: nowrap; /* Pour que les offres passent à la ligne si nécessaire */
+}
+
+.offre {
+  width: calc(
+    25% - 10px
+  ); /* Pour occuper 25% de largeur avec un espace entre les offres */
+  margin-bottom: 20px; /* Ajout d'un espacement entre les offres */
+}
+
+button {
+  background-color: #003366; /* Couleur des boutons "En savoir plus" */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Alata", sans-serif;
+}
+
+button[type="submit"] {
+  /* Dégradé de gauche à droite pour le bouton "Je m'inscris" */
+  background: linear-gradient(to right, #ef943d, #fac835);
+  font-family: "Alata", sans-serif;
+}
+
+.offre {
+  display: inline-block; /* Aligner les div.offre sur une seule rangée */
+  width: 25%; /* Pour afficher 4 offres par ligne */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  /* Dégradé de haut en bas */
+  background: linear-gradient(#ef943d, #fac835);
+}
+
+footer p {
+  color: white;
+}
+
+.consentement-label {
+  color: white; /* Applique la couleur blanche au texte du label */
+  font-size: small;
+}
+
+.copyright {
+  color: white;
+  font-size: smaller;
+  text-align: center;
+  margin-top: 60px;
+}
+
+img {
+  width: 500px;
+}
